@@ -13,10 +13,15 @@ Penentuan biaya premi asuransi kesehatan bersifat tidak mudah karena banyaknya v
 Masalah ini harus diselesaikan karena analisis premi asuransi kesehatan merupakan bagian dari permasalahan dalam *big data* untuk bidang terkait, sehingga diperlukan pendekatan *Computational Intelligence* (CI) untuk menangani jumlah data yang sangat banyak.  Salah satu solusi dengan pendekatan CI adalah dengan mengembangkan fitur perangkat lunak yang dapat memprediksi premi asuransi kesehatan setiap pemegang polis berdasarkan variabel-variabel yang ditentukan dengan memanfaatkan *machine learning* [3]. Untuk mengembangkan model *machine learning* yang dapat memprediksi premi asuransi, pengembangan harus melalui beberapa tahap, yaitu menganalisis variabel-variabel yang digunakan, menyiapkan data, mengembangkan model, dan mengevaluasi model. Dalam tahap evaluasi model, pengembang akan melakukan perbandingan terhadap lima algoritma, yaitu K-Nearest Neighbor (KNN), Random Forest (RF), AdaBoost, *Gradient Boosting*, dan LGBM *Regression* untuk menenentukan model dengan algoritma terbaik untuk kasus ini.
 
 Referensi:
+
 [1] P. E. Arimbawa, “[HUBUNGAN KEPEMILIKAN ASURANSI KESEHATAN DENGAN PENGGUNAAN OBAT RASIONAL (POR) PADA PASIEN SWAMEDIKASI](https://e-journal.unmas.ac.id/index.php/Medicamento/article/view/866/782) | Jurnal Ilmiah Medicamento,” Jan 2022, Diakses: 8 November 2022. [Daring]. Tersedia pada: https://e-journal.unmas.ac.id/index.php/Medicamento/article/view/866
+
 [2] S. N. Islami, L. Noviyanti, dan F. Indrayatna, “[Prediksi Eror Cadangan klaim berdasarkan Metode Chain Ladder Pendekatan Bootstrap pada Produk Asuransi Kesehatan](http://biastatistics.statistics.unpad.ac.id/index.php/biastatistics/article/view/140/151),” E-Journal BIAStatistics | Departemen Statistika FMIPA Universitas Padjadjaran, vol. 16, no. 2, Art. no. 2, Sep 2022.
+
 [3] S. S. Mladenovic dkk., “[Identification of the important variables for prediction of individual medical costs billed by health insurance](https://sci-hub.se/https://doi.org/10.1016/j.techsoc.2020.101307),” Technology in Society, vol. 62, hlm. 101307, Agu 2020, doi: 10.1016/j.techsoc.2020.101307.
+
 [4] B. Setiyono, “[PERLUNYA REVITALISASI KEBIJAKAN JAMINAN KESEHATAN DI INDONESIA](https://e-journal.unmas.ac.id/index.php/Medicamento/article/view/866/782),” Politika: Jurnal Ilmu Politik, vol. 9, no. 2, hlm. 38–60, Okt 2018.
+
 
 ## Business Understanding
 
@@ -97,21 +102,25 @@ Pengidentifikasian outlier dapat dilakukan dengan memanfaatkan *box plot*. *Box 
 ###### Box plot variabel age
 
 ![Box plot variabel age](https://i.ibb.co/DKNptgK/boxage.png "Box plot variabel age")
+
 Box plot di atas menunjukkan bahwa tidak ada outliers pada fitur age.
 
 ###### Box plot variabel bmi
 
 ![Box plot variabel bmi](https://i.ibb.co/yPcJqbG/boxbmi.png "Box plot variabel bmi")
+
 Box plot di atas menunjukkan bahwa terdapat beberapa outliers pada variabel bmi.
 
 ###### Box plot variabel children
 
 ![Box plot variabel children](https://i.ibb.co/fdtvrHy/boxchildren.png "Box plot variabel children")
+
 Box plot di atas menunjukkan bahwa tidak ada outliers pada variabel children.
 
 ###### Box plot variabel charges
 
 ![Box plot variabel charges](https://i.ibb.co/SXdzrMQ/boxcharges.png "Box plot variabel charges")
+
 Box plot di atas menunjukkan bahwa terdapat banyak outliers pada variabel charges.
 
 ###### Penanganan outliers
@@ -146,20 +155,25 @@ Fitur-fitur dalam dataset ini terdiri atas dua jenis, yaitu *numerical features*
 ###### Fitur sex (jenis kelamin)
 
 ![Grafik jumlah data berdasarkan jenis kelamin](https://i.ibb.co/1GJnpbK/jkstat.png "Grafik jumlah data berdasarkan jenis kelamin")
+
 Fitur sex terdiri atas dua kategori, yaitu male dan female. Grafik di atas menunjukkan bahwa jumlah data dengan jenis kelamin perempuan lebih banyak daripada laki-laki.
 
 ###### Fitur smoker
 
 ![Grafik jumlah data berdasarkan status merokok](https://i.ibb.co/Jtxfgbq/smokerstat.png "Grafik jumlah data berdasarkan status merokok")
+
 Fitur smoker terdiri atas dua kategori, yaitu yes dan no. Dalam dataset ini, jumlah data untuk pemegang polis asuransi yang tidak merokok jauh lebih banyak daripada yang merokok.
 
 ###### Fitur region
 
 ![Grafik jumlah data berdasarkan lokasi perumahan](https://i.ibb.co/TH1Lnbj/regionstat.png "Grafik jumlah data berdasarkan lokasi perumahan")
+
 Fitur region terdiri atas empat kategori, yaitu northwest, southeast, northeast, dan southwest. Keempat kategori teresbut memiliki jumlah data dengan persentase kurang lebih 25%. Di antara semua kategori pada fitur region, region northwest memiliki jumlah data tertinggi, sedangkan region southwest memiliki jumlah data terendah.
 
 ##### Analisis fitur numerik
+
 ![Grafik fitur numerik](https://i.ibb.co/4MdLYk3/univariate-num.png "Grafik fitur numerik")
+
 Berdasarkan grafik di atas, dapat disimpulkan bahwa:
 - Distribusi nilai fitur charges bersifat miring ke kanan (right-skewed).
 - Sebagian besar pemegang polis asuransi memiliki premi dari rentang 0 sampai 15000.
@@ -173,17 +187,21 @@ Berdasarkan grafik di atas, dapat disimpulkan bahwa:
 ##### Fitur charges dengan fitur kategori
 
 ###### Fitur charges dengan fitur sex
+
 ![Grafik harga premi rata-rata untuk jenis kelamin perempuan dan laki-laki](https://i.ibb.co/4KKT3bT/chargejk.png "Grafik harga premi rata-rata untuk jenis kelamin perempuan dan laki-laki")
+
 Nilai rata-rata fitur charges untuk jenis kelamin male dan female memiliki perbedaan yang sangat sedikit. Grafik di atas menunjukkan bahwa premi untuk jenis kelamin perempuan sedikit lebih tinggi daripada premi untuk jenis kelamin laki-laki. Rentang nilai rata-rata untuk kedua kategori tersebut berada antara 9500 hingga 10000. Dapat disimpulkan bahwa fitur sex memiliki pengaruh yang sangat kecil terhadap fitur charges.
 
 ###### Fitur charges dengan fitur smoker
 
 ![Grafik harga premi rata-rata untuk pemegang polis asuransi yang merokok dan tidak merokok](https://i.ibb.co/sKxLmGN/chargesmoker.png "Grafik harga premi rata-rata untuk pemegang polis asuransi yang merokok dan tidak merokok")
+
 Nilai rata-rata fitur charges untuk pemegang polis asuransi yang merokok dan tidak merokok memiliki perbedaan yang sangat besar. Grafik di atas menunjukkan bahwa pemegang polis asuransi yang merokok memiliki premi yang lebih besar daripada yang tidak merokok. Dapat disimpulkan bahwa fitur smoker memiliki pengaruh yang sangat besar terhadap fitur charges.
 
 ###### Fitur charges dengan fitur region
 
 ![Grafik harga premi rata-rata untuk setiap lokasi perumahan pemegang polis asuransi kesehatan di Amerika Serikat](https://i.ibb.co/fGKv1dn/chargeregion.png "Grafik harga premi rata-rata untuk setiap lokasi perumahan pemegang polis asuransi kesehatan di Amerika Serikat")
+
 Nilai rata-rata fitur charges untuk setiap region perbedaan yang jelas. Grafik di atas menunjukkan bahwa pemegang polis asuransi yang tinggal di wilayah northeast memiliki nilai premi tertinggi, dan wilayah southwest dengan nilai premi terendah. Dapat disimpulkan bahwa fitur region memiliki pengaruh terhadap fitur charges.
 
 ##### Fitur charges dengan fitur numerik lainnya
@@ -407,12 +425,17 @@ Berikut pembahasan mengenai metrik yang digunakan dalam tahap evaluasi.
 *Mean Squared Error* (MSE) adalah rata-rata kesalahan kuadrat antara nilai aktual dan nilai prediksi. MSE secara umum digunakan untuk memeriksa estimasi kesalahan pada nilai prediksi. Nilai MSE yang rendah atau mendekati nol menunjukkan bahwa hasil prediksi sesuai dengan data aktual dan bisa dimanfaatkan untuk memprediksi di periode mendatang.
 
 Berikut formula perhitungan MSE:
+
 ![Formula MSE](https://i.ibb.co/XCYVK7B/mseform.png)
 
 Keterangan:
-$$n$$ = jumlah data
-$$Y_i$$ = nilai aktual
-$$\hat{Y}_i$$ = nilai yang diprediksi
+
+n = jumlah data
+
+Y<sub>i</sub> = nilai aktual
+
+Ŷ<sub>i</sub> = nilai yang diprediksi
+
 
 Formula di atas menunjukkan bahwa perhitungan MSE dilakukan dengan melakukan pengkuadratan pada pengurangan nilai aktual dengan nilai prediksi setiap data, kemudian dijumlahkan secara keseluruhan dan membaginya dengan jumlah data yang ada.
 
@@ -420,12 +443,17 @@ Formula di atas menunjukkan bahwa perhitungan MSE dilakukan dengan melakukan pen
 *Mean Absolute Error* (MAE) adalah rata-rata selisih mutlak nilai aktual dengan nilai prediksi. MAE juga digunakan untuk memeriksa estimasi kesalahan pada nilai prediksi secara umum. Nilai MAE yang rendah atau mendekati nol menunjukkan bahwa hasil prediksi sesuai dengan data aktual dan bisa dimanfaatkan untuk memprediksi di periode mendatang. 
 
 Berikut formula perhitungan MAE:
+
 ![Formula MAE](https://i.ibb.co/b6jMDsS/maeform.png)
 
 Keterangan:
-$$n$$ = jumlah data
-$$Y_i$$ = nilai aktual
-$$\hat{Y}_i$$ = nilai yang diprediksi
+
+n = jumlah data
+
+Y<sub>i</sub> = nilai aktual
+
+Ŷ<sub>i</sub> = nilai yang diprediksi
+
 
 Formula di atas menunjukkan bahwa perhitungan MAE dilakukan dengan melakukan pengurangan nilai aktual dengan nilai prediksi setiap data, dimana hasil pengurangan tersebut selalu merupakan bilangan positif, yang kemudian dijumlahkan secara keseluruhan dan membaginya dengan jumlah data yang ada.
 
