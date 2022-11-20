@@ -430,12 +430,9 @@ Berikut formula perhitungan MSE:
 
 Keterangan:
 
-n = jumlah data
-
-Y<sub>i</sub> = nilai aktual
-
-Ŷ<sub>i</sub> = nilai yang diprediksi
-
+- n = jumlah data
+- Yi = nilai aktual
+- Ŷi = nilai yang diprediksi
 
 Formula di atas menunjukkan bahwa perhitungan MSE dilakukan dengan melakukan pengkuadratan pada pengurangan nilai aktual dengan nilai prediksi setiap data, kemudian dijumlahkan secara keseluruhan dan membaginya dengan jumlah data yang ada.
 
@@ -448,12 +445,9 @@ Berikut formula perhitungan MAE:
 
 Keterangan:
 
-n = jumlah data
-
-Y<sub>i</sub> = nilai aktual
-
-Ŷ<sub>i</sub> = nilai yang diprediksi
-
+- n = jumlah data
+- Yi = nilai aktual
+- Ŷi = nilai yang diprediksi
 
 Formula di atas menunjukkan bahwa perhitungan MAE dilakukan dengan melakukan pengurangan nilai aktual dengan nilai prediksi setiap data, dimana hasil pengurangan tersebut selalu merupakan bilangan positif, yang kemudian dijumlahkan secara keseluruhan dan membaginya dengan jumlah data yang ada.
 
