@@ -46,7 +46,9 @@ Referensi:
 ## Data Understanding
 
 Dataset ini berisi data pemegang polis asuransi kesehatan yang berasal dari Amerika Serikat dengan karakteristik berbeda beserta premi asuransi yang dibayar.
+
 Link download dataset: [Medical Cost Personal Datasets](https://www.kaggle.com/datasets/mirichoi0218/insurance?datasetId=13720&sortBy=voteCount).
+
 Berikut informasi dari dataset yang digunakan:
 |   |   |
 |---|---|
