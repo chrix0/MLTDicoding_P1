@@ -27,14 +27,12 @@ Referensi:
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
 - Fitur / variabel apa yang paling berpengaruh terhadap premi asuransi kesehatan?
 - Berapa biaya / premi asuransi kesehatan dengan karakteristik pemegang polis asuransi kesehatan tertentu?
 - Algoritma apa yang dapat memprediksi premi asuransi kesehatan dengan akurasi terbaik?
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
 - Mengetahui fitur / variabel yang memiliki kolerasi dengan premi asuransi kesehatan.
 - Membuat model machine learning yang dapat memprediksi premi asuransi kesehatan.
 - Mengetahui algoritma yang menghasilkan prediksi dengan akurasi tinggi dalam memprediksi premi asuransi kesehatan.
