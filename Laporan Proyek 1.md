@@ -45,10 +45,6 @@ Referensi:
 
 ## Data Understanding
 
-Dataset ini berisi data pemegang polis asuransi kesehatan yang berasal dari Amerika Serikat dengan karakteristik berbeda beserta premi asuransi yang dibayar.
-
-Link download dataset: [Medical Cost Personal Datasets](https://www.kaggle.com/datasets/mirichoi0218/insurance?datasetId=13720&sortBy=voteCount).
-
 Berikut informasi dari dataset yang digunakan:
 |   |   |
 |---|---|
@@ -56,6 +52,11 @@ Berikut informasi dari dataset yang digunakan:
 |__Deskripsi dataset__| Insurance Forecast by using Linear Regression |
 |__Jumlah sampel__| 1338 |
 |__Jumlah variabel__| 7 |
+|__Jumlah variabel__| 7 |
+
+Dataset ini berisi data pemegang polis asuransi kesehatan yang berasal dari Amerika Serikat dengan karakteristik berbeda beserta premi asuransi yang dibayar.
+
+Link download dataset: [Medical Cost Personal Datasets](https://www.kaggle.com/datasets/mirichoi0218/insurance?datasetId=13720).
 
 
 ### Exploratory Data Analysis
