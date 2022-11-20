@@ -252,8 +252,8 @@ Dalam kasus ini, 80% dataset akan digunakan sebagai data training, dan 20% datas
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state=66)
 
 Setelah dilakukan pembagian dataset:
-- x_train dan x_test memiliki 954 data
-- y_train dan y_test memiliki 239 data 
+- `x_train` dan `x_test` memiliki 954 data
+- `y_train` dan `y_test` memiliki 239 data 
 
 ### Standarisasi dengan StandardScaler
 
