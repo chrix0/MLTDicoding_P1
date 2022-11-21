@@ -218,7 +218,7 @@ Grafik pada Gambar 12 menunjukkan bahwa:
 - Biaya asuransi meningkat seiring dengan umur pemegang polis asuransi.
 - Tidak terlihat hubungan atau kolerasi antara fitur *children* dan bmi dengan fitur *charges*.
 
-*Correlation matrix* dapat digunakan memudahkan pengembang dalam melihat kolerasi antar fitur numerik. Correlation  Matrix  bertujuan  untuk  menunjukkan  hubungan  antar  suatu  variabel  dengan  variabel lainnya. Tingkat hubungan kolerasi antar variabel ditentukan dengan simbol tertentu dan nilai tertentu, baik positif, negatif ataupun tanpa korelasi [7]. Berikut *correlation matrix* yang menilai kolerasi antar fitur numerik:
+*Correlation matrix* dapat digunakan untuk memudahkan pengembang dalam melihat kolerasi antar fitur numerik. Correlation  Matrix  bertujuan  untuk  menunjukkan  hubungan  antar  suatu  variabel  dengan  variabel lainnya. Tingkat hubungan kolerasi antar variabel ditentukan dengan simbol tertentu dan nilai tertentu, baik positif, negatif ataupun tanpa korelasi [7]. Berikut *correlation matrix* yang menilai kolerasi antar fitur numerik:
 
 ![Correlation matrix](https://i.ibb.co/zsBMspB/coreelation-matrix.png "Correlation matrix")
 
@@ -365,7 +365,7 @@ Dalam kasus ini, pengembang menggunakan method `GradientBoostingRegressor()` yan
 
 Light Gradient-Boosting Machine (LightGBM atau LGBM) merupakan algoritma yang mengimplementasikan algoritma Gradient Boosting konvensional dengan penambahan dua teknik baru, yaitu Gradient Based One Side Sampling (GOSS) dan Exclusive Feature Bundling (EFB). Teknik-teknik ini dirancang untuk secara signifikan meningkatkan efisiensi dan skalabilitas algoritma Gradient Boosting [14].
 
-LGBM berkinerja baik dalam kompetisi machine learning karena penanganannya yang kuat dari berbagai jenis data, hubungan, distribusi, dan keragaman hyperparameter. LightGBM untuk kasus regresi, klasifikasi (biner dan multiclass), dan pemeringkatan.
+LGBM berkinerja baik dalam kompetisi machine learning karena penanganannya yang kuat dari berbagai jenis data, hubungan, distribusi, dan keragaman hyperparameter. LightGBM digunakan dalam kasus regresi, klasifikasi (biner dan multiclass), dan pemeringkatan.
 
 Kelebihan algoritma LGBM:
 - Kecepatan pelatihan yang lebih cepat dan efisiensi yang lebih tinggi
@@ -485,7 +485,7 @@ Tabel 8 menunjukkan bahwa hasil prediksi model dengan algoritma *Random Forest* 
 
 - Fitur-fitur yang berpengaruh terhadap premi asuransi kesehatan (*charges*) adalah umur (*age*), status merokok (*smoker*), wilayah perumahan (*region*), dan jenis kelamin (*sex*).
 - Model machine learning yang dapat memprediksi premi asuransi kesehatan adalah model dengan algoritma regresi, seperti K-Nearest Neighbor (KNN), Random Forest (RF), AdaBoost, Gradient Boosting, dan LGBM Regression. Dengan algoritma tersebut, model dapat memprediksi premi asuransi kesehatan berdasarkan karakteristik pemegang polis.
-- Di antara kelima algoritma tersebut, algoritma yang dapat memprediksi premi asuransi kesehatan dengan akurasi terbaik adalah algoritma Random Forest.
+- Di antara kelima algoritma tersebut, algoritma yang dapat memprediksi premi asuransi kesehatan dengan akurasi terbaik adalah algoritma Random Forest. Namun, nilai MSE dan MAE yang dihasilkan dengan algoritma tersebut masih tergolong tinggi, sehingga perlu dilakukan improvisasi lebih lanjut, seperti menambahkan parameter lain yang berpengaruh terhadap performa model saat melakukan *hyperparameter tuning* atau mencoba algoritma regresi lain.
 
 
 ## Referensi
