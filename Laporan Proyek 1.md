@@ -212,9 +212,9 @@ Grafik pada Gambar 11 menunjukkan bahwa nilai rata-rata fitur charges untuk seti
 
 ![Grafik hubungan fitur charges dengan fitur-fitur numerik](https://i.ibb.co/khCMZsy/multinum.png "Grafik hubungan fitur charges dengan fitur-fitur numerik")
 
-Gambar 11. Grafik hubungan fitur charges dengan fitur-fitur numerik
+Gambar 12. Grafik hubungan fitur charges dengan fitur-fitur numerik
 
-Grafik pada Gambar 11 menunjukkan bahwa:
+Grafik pada Gambar 12 menunjukkan bahwa:
 - Biaya asuransi meningkat seiring dengan umur pemegang polis asuransi.
 - Tidak terlihat hubungan atau kolerasi antara fitur *children* dan bmi dengan fitur *charges*.
 
@@ -222,9 +222,9 @@ Grafik pada Gambar 11 menunjukkan bahwa:
 
 ![Correlation matrix](https://i.ibb.co/zsBMspB/coreelation-matrix.png "Correlation matrix")
 
-Gambar 12. Correlation matrix fitur numerik
+Gambar 13. Correlation matrix fitur numerik
 
-Correlation matrix pada Gambar 12 menunjukkan bahwa terdapat kolerasi yang jelas antara fitur age dan fitur charges. Fitur bmi dan children memiliki kolerasi yang sangat rendah terhadap fitur charges (mendekati 0), sehingga kedua fitur tersebut tidak akan digunakan dalam memprediksi premi asuransi. 
+Correlation matrix pada Gambar 13 menunjukkan bahwa terdapat kolerasi yang jelas antara fitur age dan fitur charges. Fitur bmi dan children memiliki kolerasi yang sangat rendah terhadap fitur charges (mendekati 0), sehingga kedua fitur tersebut tidak akan digunakan dalam memprediksi premi asuransi. 
 
 ## Data Preparation
 
@@ -453,7 +453,7 @@ Tabel 6. Hasil evaluasi dengan metrik MSE
 
 ![Hasil evaluasi - MSE](https://i.ibb.co/LryfQVF/mse-eva.png "Hasil evaluasi - MSE")
 
-Gambar 13. Hasil evaluasi dengan metrik MSE dalam bentuk grafik
+Gambar 14. Hasil evaluasi dengan metrik MSE dalam bentuk grafik
 
 Berikut hasil evaluasi dengan metrik MAE:
 
@@ -468,9 +468,9 @@ Tabel 7. Hasil evaluasi dengan metrik MAE
 
 ![Hasil evaluasi - MAE](https://i.ibb.co/P5jPHrK/mae-eva.png "Hasil evaluasi - MAE")
 
-Gambar 14. Hasil evaluasi dengan metrik MAE dalam bentuk grafik
+Gambar 15. Hasil evaluasi dengan metrik MAE dalam bentuk grafik
 
-Tabel 6, Tabel 7, Gambar 13, dan Gambar 14 menunjukkan bahwa model dengan algoritma Random Forest memiliki nilai eror terendah dalam pengujian prediksi data testing. Hal ini menunjukkan bahwa algoritma Random Forest akan memberikan hasil prediksi yang paling akurat jika dibandingkan dengan algoritma Gradient Boosting, LGBM, KNN, dan AdaBoost.
+Tabel 6, Tabel 7, Gambar 14, dan Gambar 15 menunjukkan bahwa model dengan algoritma Random Forest memiliki nilai MSE dan MAE terendah dalam pengujian prediksi data testing. Hal ini menunjukkan bahwa algoritma Random Forest akan memberikan hasil prediksi yang paling akurat jika dibandingkan dengan algoritma Gradient Boosting, LGBM, KNN, dan AdaBoost.
 
 Berikut contoh hasil prediksi nilai premi salah satu data dengan kelima model tersebut:
 
