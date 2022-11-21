@@ -52,6 +52,7 @@ Link download dataset: [Medical Cost Personal Datasets](https://www.kaggle.com/d
 ### Exploratory Data Analysis
 
 #### Deksripsi Variabel
+
 Berikut variabel / fitur yang terdapat pada Medical Cost Personal Dataset.
 
 Tabel 2. Deskripsi dan tipe data variabel
@@ -71,7 +72,7 @@ Tabel 2 menunjukkan bahwa:
 - Terdapat 3 fitur kategori dengan tipe data object, yaitu sex, smoker, dan region.
 
 
-Beirkut statistik deskriptif untuk setiap fitur numerik.
+Beirkut statistik deskriptif setiap fitur numerik.
 
 Tabel 3. Statistik deskriptif fitur numerik
 | | age | bmi | children | charges |
@@ -153,7 +154,7 @@ Fitur sex terdiri atas dua kategori, yaitu male dan female. Grafik pada Gambar 5
 
 Gambar 6. Grafik jumlah data berdasarkan status merokok
 
-Fitur smoker terdiri atas dua kategori, yaitu yes dan no. Grafik pada Gambar 6 menunjukkan bahwa jumlah data untuk pemegang polis asuransi yang tidak merokok jauh lebih banyak daripada yang merokok.
+Fitur smoker terdiri atas dua kategori, yaitu yes dan no. Grafik pada Gambar 6 menunjukkan bahwa jumlah data pemegang polis asuransi yang tidak merokok jauh lebih banyak daripada yang merokok.
 
 ###### Fitur region
 
@@ -161,7 +162,7 @@ Fitur smoker terdiri atas dua kategori, yaitu yes dan no. Grafik pada Gambar 6 m
 
 Gambar 7. Grafik jumlah data berdasarkan lokasi perumahan
 
-Fitur region terdiri atas empat kategori, yaitu northwest, southeast, northeast, dan southwest. Keempat kategori teresbut memiliki jumlah data dengan persentase kurang lebih 25%. Grafik pada Gambar 7 menunjukkan bahwa di antara semua kategori pada fitur region, region northwest memiliki jumlah data tertinggi, sedangkan region southwest memiliki jumlah data terendah.
+Fitur region terdiri atas empat kategori, yaitu northwest, southeast, northeast, dan southwest. Keempat kategori teresbut memiliki jumlah data dengan persentase kurang lebih 25%. Grafik pada Gambar 7 menunjukkan bahwa region northwest memiliki jumlah data tertinggi, sedangkan region southwest memiliki jumlah data terendah.
 
 
 ##### Analisis fitur numerik
