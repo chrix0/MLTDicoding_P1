@@ -1,5 +1,4 @@
 # Laporan Proyek Machine Learning - Chris Tianto Pratama
-
 ## Domain Proyek
 
 Kesehatan merupakan salah satu indikator penting bagi tercapainya kehidupan yang sejahtera bagi suatu masyarakat. Kondisi tubuh yang sehat mendukung manusia untuk melakukan aktivitas sehari-hari dengan baik. Namun, tidak ada yang bisa menduga kapan tubuh akan terserang penyakit [2], [3].  
